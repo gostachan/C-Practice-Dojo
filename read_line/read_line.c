@@ -10,7 +10,6 @@ static char	*st_buf = NULL;
 static int	st_buf_size = 0;
 static int	st_used_buf_size = 0;
 
-// なぜchはint型? 多分ascii以外の文字コードを想定しているため
 static ReadLineStatus add_ch(int ch);
 void free_buffer(void);
 ReadLineStatus read_line(FILE *fp, char **line);

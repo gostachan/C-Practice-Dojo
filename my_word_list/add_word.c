@@ -68,4 +68,5 @@ void add_word(char *word)
 // 	add_word("code");
 // 	add_word("kaketa");
 // 	dump_word(stdout);
+// 	printf("word_header->name = %s\n", word_header->name);
 // }

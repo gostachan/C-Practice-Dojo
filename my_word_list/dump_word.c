@@ -3,8 +3,9 @@
 
 void dump_word(FILE *fp)
 {
-	while (word_header != NULL) {
-		printf("%d : %s\n", word_header->count, word_header->name);
-		word_header = word_header->next;
+	Word *cp_word_header = word_header;
+	while (cp_word_header != NULL) {
+		printf("%d : %s\n", cp_word_header->count, cp_word_header->name);
+		cp_word_header = cp_word_header->next;
 	}
 }

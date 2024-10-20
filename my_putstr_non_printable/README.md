@@ -15,3 +15,4 @@ Coucou\0atu vas bien ?
 void my_putstr_non_printable(char *str);
 ```
 ## 学んだこと
+* なし　簡単だった

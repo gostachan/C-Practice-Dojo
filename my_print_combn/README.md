@@ -9,7 +9,7 @@ $>./a.out | cat -e
 ```
 * タイプ例)
 ```
-void ft_print_combn(int n);
+void my_print_combn(int n);
 ```
 ## プログラムの実行方法例
 ``` terminal

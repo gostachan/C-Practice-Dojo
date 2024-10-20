@@ -31,5 +31,5 @@ void my_print_combn(int n)
 
 int main()
 {
-	my_print_combn(2);
+	my_print_combn(5);
 }

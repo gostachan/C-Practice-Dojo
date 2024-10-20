@@ -11,6 +11,7 @@ $>./a.out | cat -e
 ```
 void my_print_combn(int n);
 ```
+* 可変長配列(VLA)の使用禁止
 ## プログラムの実行方法例
 ``` terminal
 $ gcc my_printcombn.c

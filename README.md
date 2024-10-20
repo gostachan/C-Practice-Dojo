@@ -4,6 +4,7 @@
 書籍から引っ張ってきたコードもあれば、思いつきで作ったコードなどごちゃ混ぜになっています。\
 各ディレクトリが一つのプロジェクトになっています。
 ## 更新履歴
+* 24/10/20 : [my_putstr_non_printable.c](https://github.com/gostachan/C-Practice-Dojo/tree/main/my_putstr_non_printable)
 * 24/10/20 : [my_print_combn.c](https://github.com/gostachan/C-Practice-Dojo/tree/main/my_print_combn)
 * 24/10/15 : [my_word_list.c](https://github.com/gostachan/C-Practice-Dojo/tree/main/my_word_list)
 * 24/10/14 : [my_word_array.c](https://github.com/gostachan/C-Practice-Dojo/tree/main/my_word_array)

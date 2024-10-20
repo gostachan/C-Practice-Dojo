@@ -12,6 +12,6 @@ Coucou\0atu vas bien ?
 ```
 * プロトタイプ例)
 ```
-void ft_putstr_non_printable(char *str);
+void my_putstr_non_printable(char *str);
 ```
 ## 学んだこと

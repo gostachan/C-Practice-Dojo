@@ -107,4 +107,10 @@ int main(void)
 	while (splited_array[i] != NULL) {
 		printf("%s\n", splited_array[i++]);
 	}
+
+	i = 0;
+	while (splited_array[i] != NULL)
+		free(splited_array[i++]);
+	free(splited_array[i]);
+	free(splited_array);
 }

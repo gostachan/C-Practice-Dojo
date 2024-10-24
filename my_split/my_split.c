@@ -19,7 +19,6 @@ int is_charset(char ch, char *charset)
 	return 0;
 }
 
-
 int word_cnt(char *str, char *charset)
 {
 	int res;
@@ -29,7 +28,6 @@ int word_cnt(char *str, char *charset)
 	res = 1;
 	while (str[index] && is_charset(str[index], charset))
 		index++;
-
 	while (str[index + 1]) {
 		index++;
 		if (is_charset(str[index - 1], charset) && !is_charset(str[index], charset))
@@ -37,7 +35,6 @@ int word_cnt(char *str, char *charset)
 			res++;
 		}
 	}
-
 	return res;
 }
 
@@ -50,29 +47,24 @@ char *inline_cpy(char **dest, const char *src, int begin, int end)
 	*dest = malloc(sizeof(char) * (end - begin + 1));
 	(*dest)[end - begin] = '\0';
 	index = 0;
-
 	while (begin + index != end) {
 		(*dest)[index] = src[begin + index];
 		index++;
 	}
-
 	return *dest;
 }
 
 char **ft_split(char *str, char *charset)
 {
-
 	char **res;
 	int wc;
 	int begin;
 	int end;
-	wc = word_cnt(str, charset);
 
+	wc = word_cnt(str, charset);
 	res = malloc(sizeof(res[0]) * (wc + 1));
 	res[wc] = NULL;
-
 	// printf("wc = %d\n", wc);
-
 	begin = 0;
 	int index = 0;
 	while (str[begin] && is_charset(str[begin], charset))
@@ -87,8 +79,6 @@ char **ft_split(char *str, char *charset)
 		inline_cpy(&res[index++], str, begin, end);
 		begin = end;
 	}
-
-
 	return res;
 }
 
@@ -99,15 +89,13 @@ int main(void)
 	int i;
 	char str[100] = " hello, i'm misaki nice to meet you!    ";
 	char **splited_array;
+
 	wc = word_cnt(str, " ");
-
-
 	splited_array = ft_split(str, " ");
 	i = 0;
 	while (splited_array[i] != NULL) {
 		printf("%s\n", splited_array[i++]);
 	}
-
 	i = 0;
 	while (splited_array[i] != NULL)
 		free(splited_array[i++]);

@@ -10,3 +10,6 @@
 * 24/10/15  ⭐︎3 : [my_word_list](https://github.com/gostachan/C-Practice-Dojo/tree/main/my_word_list)
 * 24/10/14  ⭐︎3 : [my_word_array](https://github.com/gostachan/C-Practice-Dojo/tree/main/my_word_array)
 * 24/10/13  ⭐︎2 : [my_read_line](https://github.com/gostachan/C-Practice-Dojo/tree/main/my_read_line)
+
+
+hello, test
